@@ -20,6 +20,7 @@ type fm_device, dev_type, mlstrustedobject;
 type gps_emi_device, dev_type;
 type stpgps_device, dev_type;
 type gps2scp_device, dev_type;
+type aol_geofence_device, dev_type;
 type gps_pwr_device, dev_type;
 type gpsdl_device, dev_type;
 type connfem_device, dev_type;
@@ -85,6 +86,7 @@ type mtk_hcp_device, dev_type;
 type mtk_ccd_device, dev_type;
 type mtk_v4l2_media_device, dev_type;
 type ccu_device, dev_type;
+type mtk_aov_device, dev_type;
 type gpueb_device, dev_type;
 type vcp_device, dev_type;
 type mvpu_algo_device, dev_type;
@@ -267,6 +269,9 @@ type pi_img_device, dev_type;
 type vpud_device, dev_type;
 type vcu_device, dev_type;
 type mml_pq_device, dev_type;
+type connsys_bt_block_device, dev_type;
+type connsys_wifi_block_device, dev_type;
+type connsys_gnss_block_device, dev_type;
 
 ##########################
 # Sensor common Devices Start

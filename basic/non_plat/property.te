@@ -72,6 +72,7 @@ vendor_restricted_prop(vendor_mtk_net_cdma_mdmstat_prop)
 vendor_restricted_prop(vendor_mtk_nn_option_prop)
 vendor_restricted_prop(vendor_mtk_gbe_prop)
 vendor_restricted_prop(vendor_mtk_nvram_ready_prop)
+vendor_restricted_prop(vendor_mtk_service_wifi_nvram_prop)
 vendor_restricted_prop(vendor_mtk_omx_log_prop)
 vendor_restricted_prop(vendor_mtk_operator_id_prop)
 vendor_restricted_prop(vendor_mtk_persist_service_atci_prop)
@@ -129,6 +130,7 @@ vendor_restricted_prop(vendor_debug_logger_prop)
 vendor_restricted_prop(vendor_mtk_crossmount_prop)
 vendor_restricted_prop(vendor_mtk_deinterlace_prop)
 vendor_restricted_prop(vendor_mtk_omx_core_prop)
+vendor_restricted_prop(vendor_mtk_cnop_vowifi_prop)
 
 # Properties with can be read by all domains
 typeattribute vendor_mtk_aal_ro_prop                 mtk_core_property_type;
@@ -166,6 +168,7 @@ typeattribute vendor_mtk_mnld_prop                   mtk_core_property_type;
 typeattribute vendor_mtk_modem_warning_prop          mtk_core_property_type;
 typeattribute vendor_mtk_net_cdma_mdmstat_prop       mtk_core_property_type;
 typeattribute vendor_mtk_nvram_ready_prop            mtk_core_property_type;
+typeattribute vendor_mtk_service_wifi_nvram_prop     mtk_core_property_type;
 typeattribute vendor_mtk_omx_log_prop                mtk_core_property_type;
 typeattribute vendor_mtk_operator_id_prop            mtk_core_property_type;
 typeattribute vendor_mtk_persist_service_atci_prop   mtk_core_property_type;
