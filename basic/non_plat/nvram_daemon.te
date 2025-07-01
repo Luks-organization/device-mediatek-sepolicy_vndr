@@ -96,5 +96,5 @@ allow nvram_daemon gsi_metadata_file:dir search;
 set_prop(nvram_daemon, vendor_mtk_service_nvram_restore_prop)
 get_prop(nvram_daemon, vendor_mtk_service_nvram_restore_prop)
 
-# Allow nvram_daemon to set vendor.service.wifi_nvram
+# Allow nvraem_daemon to get/set vendor_mtk_service_wifi_nvram_prop
 set_prop(nvram_daemon, vendor_mtk_service_wifi_nvram_prop)
