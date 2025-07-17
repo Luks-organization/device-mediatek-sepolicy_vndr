@@ -2,6 +2,8 @@
 # Common SEPolicy Rule
 # ==============================================
 
+hal_server_domain(hal_wifi_default, hal_wifi)
+
 allow hal_wifi_default self:capability sys_module;
 allow hal_wifi_default vendor_file:system module_load;
 allow hal_wifi_default kernel:system module_request;

@@ -137,7 +137,7 @@ allowxperm system_server proc_perfmgr:file ioctl {
 # Date : W18.22
 # Operation : MTK wifi hal migration
 # Purpose : MTK wifi hal interface permission
-binder_call(system_server, mtk_hal_wifi)
+binder_call(system_server, hal_wifi_default)
 
 # Date : WK19.7
 # Operation: Q migration

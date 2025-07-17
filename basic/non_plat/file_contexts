@@ -783,8 +783,8 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.secure_element@1\.2-service-st54spi u:object_r:st54spi_hal_secure_element_exec:s0
 
 # MTK Wifi Hal
-/(vendor|system/vendor)/bin/hw/android\.hardware\.wifi@1\.0-service-mediatek      u:object_r:mtk_hal_wifi_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.wifi@1\.0-service-lazy-mediatek u:object_r:mtk_hal_wifi_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.wifi@1\.0-service-mediatek          u:object_r:hal_wifi_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.wifi@1\.0-service-lazy-mediatek     u:object_r:hal_wifi_default_exec:s0
 
 # MTK USB hal
 /(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.[0-9]+-service-mediatek   u:object_r:mtk_hal_usb_exec:s0
