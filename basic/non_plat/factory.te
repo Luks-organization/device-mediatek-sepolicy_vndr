@@ -344,7 +344,7 @@ allow factory sysfs_wake_lock:file rw_file_perms;
 
 # For Light HIDL permission
 hal_client_domain(factory, hal_light)
-allow factory mtk_hal_light:binder call;
+allow factory hal_light_default:binder call;
 allow factory merged_hal_service:binder call;
 
 # For vibrator test permission
