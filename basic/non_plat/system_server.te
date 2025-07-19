@@ -75,7 +75,7 @@ binder_call(system_server, mtk_hal_bluetooth)
 
 # Operation : light hal developing
 # Purpose : light hal interface permission
-binder_call(system_server, mtk_hal_light)
+binder_call(system_server, hal_light_default)
 
 # Date:W17.21
 # Operation : gnss hal
