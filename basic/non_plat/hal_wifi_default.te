@@ -8,6 +8,8 @@ allow hal_wifi_default self:capability sys_module;
 allow hal_wifi_default vendor_file:system module_load;
 allow hal_wifi_default kernel:system module_request;
 allow hal_wifi_default persist_vendor_debug_wifi_prop:file { read open };
+allow hal_wifi_default wifi_data_file:dir { search };
+allow hal_wifi_default wifi_data_file:file { read write };
 
 # allow hal service to manage AP bridge
 allowxperm hal_wifi_default self:udp_socket ioctl {
