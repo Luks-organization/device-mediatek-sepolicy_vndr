@@ -1065,3 +1065,6 @@
 
 # Neural Network
 /(vendor|system/vendor)/bin/hw/android\.hardware\.neuralnetworks-shim-service-mtk-legacy  u:object_r:mtk_hal_neuralnetworks_exec:s0
+
+# composer_ext
+/vendor/lib(64)?/vendor\.mediatek\.hardware\.composer_ext-V[0-9]+-ndk\.so                 u:object_r:same_process_hal_file:s0
