@@ -150,7 +150,7 @@
 /dev/ccci_c2k_agps u:object_r:agps_device:s0
 /dev/ccci.*        u:object_r:ccci_device:s0
 
-/dev/mtk_aov(/.*)?   u:object_r:mtk_aov_device:s0
+/dev/mtk_aov(/.*)?         u:object_r:mtk_aov_device:s0
 
 /dev/cpu_dma_latency(/.*)? u:object_r:cpu_dma_latency_device:s0
 /dev/devmap(/.*)?          u:object_r:devmap_device:s0
@@ -181,7 +181,7 @@
 /dev/fw_log_wifimcu u:object_r:fw_log_wifimcu_device:s0
 /dev/fw_log_ics     u:object_r:fw_log_ics_device:s0
 
-/dev/aol_geofence   u:object_r:aol_geofence_device:s0
+/dev/aol_geofence       u:object_r:aol_geofence_device:s0
 /dev/geofence(/.*)?     u:object_r:geo_device:s0
 /dev/fw_log_gps         u:object_r:fw_log_gps_device:s0
 /dev/hdmitx(/.*)?       u:object_r:graphics_device:s0
@@ -320,7 +320,7 @@
 /dev/socket/atci-audio(/.*)? u:object_r:atci-audio_socket:s0
 
 /dev/socket/meta-atci(/.*)?     u:object_r:meta_atci_socket:s0
-/dev/socket/factory-atci(/.*)? u:object_r:factory_atci_socket:s0
+/dev/socket/factory-atci(/.*)?  u:object_r:factory_atci_socket:s0
 /dev/socket/backuprestore(/.*)? u:object_r:backuprestore_socket:s0
 
 /dev/socket/dfo(/.*)?       u:object_r:dfo_socket:s0
@@ -428,9 +428,9 @@
 /dev/touch(/.*)?         u:object_r:touch_device:s0
 /dev/tpd_em_log(/.*)?    u:object_r:tpd_em_log_device:s0
 
-/dev/connfem(/.*)? u:object_r:connfem_device:s0
+/dev/connfem(/.*)?       u:object_r:connfem_device:s0
 
-/dev/ttyC0     u:object_r:gsm0710muxd_device:s0
+/dev/ttyC0             u:object_r:gsm0710muxd_device:s0
 /dev/ttyCMIPC0         u:object_r:gsm0710muxd_device:s0
 /dev/ttyCMIPC1         u:object_r:gsm0710muxd_device:s0
 /dev/ttyCMIPC2         u:object_r:gsm0710muxd_device:s0
@@ -463,17 +463,17 @@
 /dev/vow(/.*)?    u:object_r:vow_device:s0
 
 /dev/wmtdetect(/.*)?      u:object_r:wmtdetect_device:s0
-/dev/conn_pwr_dev(/.*)?      u:object_r:conn_pwr_device:s0
+/dev/conn_pwr_dev(/.*)?   u:object_r:conn_pwr_device:s0
 /dev/conn_scp(/.*)?       u:object_r:conn_scp_device:s0
 /dev/wmtWifi(/.*)?        u:object_r:wmtWifi_device:s0
 /dev/ancservice(/.*)?     u:object_r:ancservice_device:s0
 /dev/offloadservice(/.*)? u:object_r:offloadservice_device:s0
 /dev/audio_ipi(/.*)?      u:object_r:audio_ipi_device:s0
 
-/dev/adsp(/.*)?      u:object_r:adsp_device:s0
-/dev/adsp_0(/.*)?    u:object_r:adsp_device:s0
-/dev/adsp_1(/.*)?    u:object_r:adsp_device:s0
-/dev/audio_scp(/.*)? u:object_r:audio_scp_device:s0
+/dev/adsp(/.*)?        u:object_r:adsp_device:s0
+/dev/adsp_0(/.*)?      u:object_r:adsp_device:s0
+/dev/adsp_1(/.*)?      u:object_r:adsp_device:s0
+/dev/audio_scp(/.*)?   u:object_r:audio_scp_device:s0
 
 /dev/irtx              u:object_r:irtx_device:s0
 /dev/lirc[0-9]+        u:object_r:irtx_device:s0
@@ -490,7 +490,7 @@
 /dev/mbim              u:object_r:mbim_device:s0
 /dev/alarm(/.*)?       u:object_r:alarm_device:s0
 /dev/radio(/.*)?       u:object_r:mtk_radio_device:s0
-/dev/mml_pq     u:object_r:mml_pq_device:s0
+/dev/mml_pq            u:object_r:mml_pq_device:s0
 
 # Sensor common Devices Start
 /dev/als_ps(/.*)?     u:object_r:als_ps_device:s0
@@ -578,10 +578,11 @@
 /dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/dpm.*                            u:object_r:dpm_block_device:s0
 /dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/mcf_ota(_[ab])?                  u:object_r:mcf_ota_block_device:s0
 /dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/vcp(_[ab])?                      u:object_r:vcp_device:s0
-/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/modem(_[ab])?		    u:object_r:md_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/modem(_[ab])?		            u:object_r:md_block_device:s0
+
 # Key manager
-/dev/block/platform/soc/[0-9]+\.mmc/by-name/kb  u:object_r:kb_block_device:s0
-/dev/block/platform/soc/[0-9]+\.mmc/by-name/dkb u:object_r:dkb_block_device:s0
+/dev/block/platform/soc/[0-9]+\.mmc/by-name/kb      u:object_r:kb_block_device:s0
+/dev/block/platform/soc/[0-9]+\.mmc/by-name/dkb     u:object_r:dkb_block_device:s0
 
 /dev/block/by-name/proinfo                          u:object_r:nvram_device:s0
 /dev/block/by-name/nvram                            u:object_r:nvram_device:s0
@@ -638,7 +639,7 @@
 /dev/block/by-name/ccu(_[ab])?                      u:object_r:ccu_device:s0
 /dev/block/by-name/gpueb(_[ab])?                    u:object_r:gpueb_device:s0
 /dev/block/by-name/vcp(_[ab])?                      u:object_r:vcp_device:s0
-/dev/block/by-name/mvpu_algo(_[ab])?                      u:object_r:mvpu_algo_device:s0
+/dev/block/by-name/mvpu_algo(_[ab])?                u:object_r:mvpu_algo_device:s0
 /dev/block/by-name/connsys_bt(_[ab])?               u:object_r:connsys_bt_block_device:s0
 /dev/block/by-name/connsys_wifi(_[ab])?             u:object_r:connsys_wifi_block_device:s0
 /dev/block/by-name/connsys_gnss(_[ab])?             u:object_r:connsys_gnss_block_device:s0
@@ -653,6 +654,15 @@
 
 /dev/vcu  u:object_r:vcu_device:s0
 /dev/vpud u:object_r:vpud_device:s0
+
+# Date: 2026/01/21
+# Purpose: Add permission
+/dev/gpiochip0			                                                           u:object_r:gpio_dev:s0
+/dev/cpu_dma_latency                                                               u:object_r:latency_device:s0
+/dev/sg[0-5]                                                                       u:object_r:sg_device:s0
+/dev/sg.*                                                                          u:object_r:sg_device:s0
+/dev/wlan                                                                          u:object_r:wlan_device:s0
+/dev/nanohub                                                                       u:object_r:nanohub_device:s0
 
 ##########################
 # Vendor files
