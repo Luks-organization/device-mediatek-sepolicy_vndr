@@ -6,7 +6,8 @@
 # Data files
 #
 # Trustonic data files
-/data/vendor/mcRegistry(/.*)? u:object_r:mobicore_data_file:s0
+/data/vendor/mcRegistry(/.*)?        u:object_r:mobicore_data_file:s0
+/mnt/vendor/persist/mcRegistry(/.*)? u:object_r:mobicore_data_file:s0
 
 # Microtrust data files
 /data/vendor/thh(/.*)? u:object_r:teei_data_file:s0
