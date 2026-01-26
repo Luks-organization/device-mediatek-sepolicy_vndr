@@ -174,7 +174,6 @@ persist.vendor.atm.ipaddress u:object_r:vendor_mtk_atm_ipaddr_prop:s0
 ro.boot.atm u:object_r:vendor_mtk_default_prop:s0
 
 # telephony property
-vendor.rild.          u:object_r:vendor_mtk_radio_prop:s0
 vendor.ril.           u:object_r:vendor_mtk_radio_prop:s0
 ro.vendor.ril.        u:object_r:vendor_mtk_radio_prop:s0
 vendor.gsm.           u:object_r:vendor_mtk_radio_prop:s0
