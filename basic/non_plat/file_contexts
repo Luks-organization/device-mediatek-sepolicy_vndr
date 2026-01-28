@@ -152,7 +152,6 @@
 /dev/ccci.*        u:object_r:ccci_device:s0
 
 /dev/mtk_aov(/.*)?         u:object_r:mtk_aov_device:s0
-
 /dev/cpu_dma_latency(/.*)? u:object_r:cpu_dma_latency_device:s0
 /dev/devmap(/.*)?          u:object_r:devmap_device:s0
 /dev/dri(/.*)?             u:object_r:gpu_device:s0
@@ -660,7 +659,6 @@
 # Date: 2026/01/21
 # Purpose: Add permission
 /dev/gpiochip0			                                                           u:object_r:gpio_dev:s0
-/dev/cpu_dma_latency                                                               u:object_r:latency_device:s0
 /dev/sg[0-5]                                                                       u:object_r:sg_device:s0
 /dev/sg.*                                                                          u:object_r:sg_device:s0
 /dev/wlan                                                                          u:object_r:wlan_device:s0

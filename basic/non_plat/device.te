@@ -385,7 +385,6 @@ type ccci_vts_device, dev_type;
 
 # Date: 2026/01/21
 # Purpose: Add permission
-type latency_device, dev_type;
 type sg_device, dev_type;
 type gpio_dev, dev_type;
 type wlan_device, dev_type;
