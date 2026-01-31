@@ -243,7 +243,8 @@ ro.vendor.mtk_flight_mode_power_off_md  u:object_r:vendor_mtk_default_prop:s0
 ro.vendor.mtk_emmc_support u:object_r:vendor_mtk_emmc_support_prop:s0
 
 # MTK connsys log feature
-ro.vendor.connsys.dedicated.log u:object_r:vendor_mtk_default_prop:s0
+ro.vendor.connsys.dedicated.log      u:object_r:vendor_mtk_default_prop:s0
+ro.vendor.connsys.dedicated.log.port u:object_r:vendor_mtk_default_prop:s0
 
 # em usb property
 vendor.usb.port.mode u:object_r:vendor_mtk_em_usb_prop:s0
