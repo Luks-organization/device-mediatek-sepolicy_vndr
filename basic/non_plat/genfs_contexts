@@ -44,7 +44,6 @@ genfscon proc /mtk_cmdq_debug/status         u:object_r:proc_cmdq_debug:s0
 genfscon proc /mtk_cmdq_debug/record         u:object_r:proc_cmdq_debug:s0
 genfscon proc /cpuhvfs/dbg_repo              u:object_r:proc_dbg_repo:s0
 genfscon proc /sys/kernel/panic_on_rcu_stall u:object_r:proc_panic_on_rcu_stall:s0
-genfscon proc /sys/vm/dirty_writeback_centisecs u:object_r:proc_dirty:s0
 genfscon proc /sys/kernel/sched_pelt_multiplier u:object_r:proc_sched:s0
 
 # Purpose dump not exit file
@@ -671,12 +670,12 @@ genfscon proc /mgq u:object_r:proc_mgq:s0
 genfscon sysfs /kernel/thunderquake_engine    u:object_r:sysfs_vibrator:s0
 
 # GPU
-genfscon sysfs /devices/platform/13000000.mali/dma_buf_gpu_mem u:object_r:sysfs_gpu:s0
-genfscon sysfs /devices/platform/13000000.mali/kprcs u:object_r:sysfs_gpu:s0
-genfscon sysfs /devices/platform/13000000.mali/total_gpu_mem u:object_r:sysfs_gpu:s0
-genfscon sysfs /devices/platform/13040000.mali/dma_buf_gpu_mem u:object_r:sysfs_gpu:s0
-genfscon sysfs /devices/platform/13040000.mali/kprcs u:object_r:sysfs_gpu:s0
-genfscon sysfs /devices/platform/13040000.mali/total_gpu_mem u:object_r:sysfs_gpu:s0
+genfscon sysfs /devices/platform/13000000.mali/dma_buf_gpu_mem u:object_r:vendor_sysfs_gpu:s0
+genfscon sysfs /devices/platform/13000000.mali/kprcs u:object_r:vendor_sysfs_gpu:s0
+genfscon sysfs /devices/platform/13000000.mali/total_gpu_mem u:object_r:vendor_sysfs_gpu:s0
+genfscon sysfs /devices/platform/13040000.mali/dma_buf_gpu_mem u:object_r:vendor_sysfs_gpu:s0
+genfscon sysfs /devices/platform/13040000.mali/kprcs u:object_r:vendor_sysfs_gpu:s0
+genfscon sysfs /devices/platform/13040000.mali/total_gpu_mem u:object_r:vendor_sysfs_gpu:s0
 
 # IRQ
 genfscon sysfs /kernel/irq          u:object_r:sysfs_irq:s0
